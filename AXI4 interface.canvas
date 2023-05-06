@@ -1,0 +1,11 @@
+{
+	"nodes":[
+		{"type":"text","text":"SystemVerilog Interfaces","id":"5a7fb9c274a42939","x":-300,"y":-85,"width":250,"height":60},
+		{"type":"text","text":"AXI4S Protocol Checker","id":"b89cd9583341f0be","x":20,"y":-80,"width":250,"height":50},
+		{"type":"text","text":"","id":"c037cd88a977e22c","x":540,"y":-75,"width":145,"height":50}
+	],
+	"edges":[
+		{"id":"df5e2482ac078bba","fromNode":"5a7fb9c274a42939","fromSide":"right","toNode":"b89cd9583341f0be","toSide":"left"},
+		{"id":"6b1e5573a9a0c45d","fromNode":"b89cd9583341f0be","fromSide":"right","toNode":"c037cd88a977e22c","toSide":"left","label":"M_AXI4STREAM"}
+	]
+}

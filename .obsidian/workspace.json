@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "5135abf48aa35ce2",
+    "type": "split",
+    "children": [
+      {
+        "id": "95ec2d116687c0b7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c7fe99d923521050",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Hardware/SystemVerilog/Exmple Designs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "79509287379439b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e1444b422c05b21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "362dc74f49c3531d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "ff157df352301aa9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "85436e6471601187",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "ddf555e69579d81f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ea8fe3b30436adff",
+    "type": "split",
+    "children": [
+      {
+        "id": "761c96dd6cc36f03",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c00297f8a8f1f514",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Hardware/SystemVerilog/Exmple Designs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "478b7a6e424b4af2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Hardware/SystemVerilog/Exmple Designs.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "da83fdb49598612d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "410c314c680ad7d6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Hardware/SystemVerilog/Exmple Designs.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c7fe99d923521050",
+  "lastOpenFiles": [
+    "daily notes/FPGA prototyping.md",
+    "Untitled 2.canvas",
+    "Hardware/SystemVerilog/Exmple Designs.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "daily notes/UVM Cookbook.md",
+    "sys.md",
+    "Hardware/SystemVerilog",
+    "Hardware",
+    "Daily Habbits.md",
+    "daily notes/AXI4-Stream.md",
+    "To Do/To Do list.md",
+    "To Do",
+    "AXI4 interface.canvas",
+    "2023-04-28.md",
+    "daily notes/Untitled",
+    "daily notes"
+  ]
+}
