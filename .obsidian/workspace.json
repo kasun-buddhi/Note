@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily Habbits.md",
+                "file": "daily notes/daily note/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Daily Habbits.md",
+                "file": "daily notes/daily note/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Daily Habbits.md",
+                "file": "daily notes/daily note/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Daily Habbits.md"
+                "file": "daily notes/daily note/Untitled.md"
               }
             }
           }
@@ -156,8 +156,8 @@
   },
   "active": "c7fe99d923521050",
   "lastOpenFiles": [
-    "AXI4 interface.canvas",
     "Daily Habbits.md",
+    "AXI4 interface.canvas",
     "Untitled.canvas",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
