@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Hardware/SystemVerilog/Exmple Designs.md",
+                "file": "Daily Habbits.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Hardware/SystemVerilog/Exmple Designs.md",
+                "file": "Daily Habbits.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Hardware/SystemVerilog/Exmple Designs.md",
+                "file": "Daily Habbits.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hardware/SystemVerilog/Exmple Designs.md"
+                "file": "Daily Habbits.md"
               }
             }
           }
@@ -156,22 +156,23 @@
   },
   "active": "c7fe99d923521050",
   "lastOpenFiles": [
-    "daily notes/FPGA prototyping.md",
-    "Untitled 2.canvas",
-    "Hardware/SystemVerilog/Exmple Designs.md",
-    "Untitled 1.canvas",
+    "AXI4 interface.canvas",
+    "Daily Habbits.md",
     "Untitled.canvas",
+    "Untitled 2.canvas",
+    "Untitled 1.canvas",
+    "Hardware/SystemVerilog/Exmple Designs.md",
+    "daily notes/FPGA prototyping.md",
+    "daily notes/daily note/Untitled.md",
     "daily notes/UVM Cookbook.md",
     "sys.md",
     "Hardware/SystemVerilog",
     "Hardware",
-    "Daily Habbits.md",
     "daily notes/AXI4-Stream.md",
     "To Do/To Do list.md",
     "To Do",
-    "AXI4 interface.canvas",
     "2023-04-28.md",
-    "daily notes/Untitled",
+    "daily notes/daily note",
     "daily notes"
   ]
 }

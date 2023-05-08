@@ -71,7 +71,7 @@ it can make code scalable and reusable
 
 ## <u>Replicated Stucture</u>
 
-there are two well-patterned structure, cascadine chain or two-dimentional mesh. replicated structure can be desctribed by generated-for statement and procedural-for statemen
+There are two well-patterned structure, cascadine chain or two-dimentional mesh. replicated structure can be desctribed by generated-for statement and procedural-for statemen
 
 ### Generate-for statement
 
