@@ -120,4 +120,25 @@ module reduced_xor_loop #(
 endmodule
 ```
 
-[[Exmple Designs]]
+Example Designs:
+	1. Barrel Shifter                -> [[Exmple Designs#barrel shifter]]
+	2. Floating-point adder   -> [[Exmple Designs#Simplified floating-point adder]]
+
+## Regular Sequential circuit
+
+A sequential circuit is a circuit with memory, which forms the internal state of the the circuit. the output of a sequential circuit is a function of the input and the internal state. The __synchronous design methodology__ is the most commonly used practice in designing a sequential circuit. In this methodology all the storage elements are controlled by a global clock signal and the data is sampled and stored at the rising or failing edge of the clock signal. 
+
+### D-FF and register
+the most basic storage element in a sequential circuit is D-FF 
+![[Screenshot from 2023-05-14 17-40-14.png]] 
+
+### Basic block system
+
+Following block diagram shows a synchronous system
+![[Screenshot from 2023-05-14 17-43-47.png]]
+- _State register_ : a collection of D FFs controlled by the same clock signal
+- _Next-state logic_ : combinational logic that uses the external input and internal state (output of register) to determine the new value of register
+- _output logic_ : combinational logic that generates the output signal
+
+### Code development
+The key is to separate the memory component(the register) from the system. Once register is isolated, the remaining portion is a pure combinational circuit 

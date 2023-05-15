@@ -1,3 +1,5 @@
 {
-  "useTab": true
+  "useTab": true,
+  "spellcheckLanguages": null,
+  "spellcheck": true
 }
