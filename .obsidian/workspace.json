@@ -8,18 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8d3f3b99d494f067",
+            "id": "5f04c8e1ef1c475f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "daily notes/OVM Cookbook.md",
+                "file": "Tasks/Habbits.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "6b33924547a0ae75",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +57,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "abstract",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +102,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "daily notes/OVM Cookbook.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +118,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "daily notes/OVM Cookbook.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +139,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "daily notes/OVM Cookbook.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -153,28 +158,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "362dc74f49c3531d",
+  "active": "6b33924547a0ae75",
   "lastOpenFiles": [
+    "daily notes/OVM Cookbook.md",
+    "Articles/Fundamentals of OVM.md",
+    "Diary/2023.05.18.md",
+    "Tasks/Habbits.md",
+    "Articles",
+    "Tasks/Tasks for reminding.md",
+    "daily notes/UVM Cookbook.md",
+    "daily notes/FPGA prototyping.md",
+    "Diary/2023.05.17.md",
+    "Diary/2023 May.md",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "daily notes/AXI4-Stream.md",
+    "Hardware/SystemVerilog/Exmple Designs.md",
+    "Diary/2023 June.md",
+    "Diary/2023.05.16.md",
+    "Diary/2024 July.md",
+    "Diary/2023.md",
+    "Diary",
+    "images/Pasted image 20230516161222.png",
+    "images/Screenshot from 2023-05-16 15-06-53.png",
+    "daily notes/AXI4 interface.canvas",
+    "images/Screenshot from 2023-05-15 17-32-51.png",
     "images/Screenshot from 2023-05-15 07-08-16.png",
     "images",
-    "daily notes/OVM Cookbook.md",
     "Screenshot from 2023-05-15 07-08-16.png.md",
-    "Tasks/Habbits.md",
-    "Tasks/Tasks for reminding.md",
-    "daily notes/AXI4 interface.canvas",
     "Tasks",
-    "daily notes/FPGA prototyping.md",
-    "daily notes/AXI4-Stream.md",
     "Screenshot from 2023-05-10 21-29-16.png.md",
-    "Hardware/SystemVerilog/Exmple Designs.md",
     "Screenshot from 2023-05-10 21-29-16.png",
     "images/Screenshot from 2023-05-14 17-43-47.png",
     "images/Screenshot from 2023-05-14 17-40-14.png",
-    "daily notes/UVM Cookbook.md",
     "daily notes/daily note/ACCELR founded coding issues.md",
-    "Untitled.canvas",
     "To Do/To Do list.md",
-    "Untitled 1.canvas",
     "Untitled 2.canvas",
     "2023-05-10.md",
     "sys.md",

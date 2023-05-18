@@ -60,3 +60,138 @@ a :- "allign number"
 r :- "result of addition/subtraction"
 n :- "normalized number"
 
+## LIFO (last in first out) 
+```systemverilog
+class stack;
+	typedef bit [31:0] data_t;
+	local data_t       stk[20];
+	local int          stkptr;
+
+	function new();
+		clear();
+	endfunction
+
+	function bit pop(output data_t data);
+		if(is_empty())
+			return 0;
+		data = stk[stkptr];
+		stkptr= stkptr - 1;
+		return 1;
+	endfunction
+
+	function bit push(data_t data);
+		if(is_full())
+			return 0;
+		stkptr = stkptr - 1;
+		stk[stkptr] = data;
+		return 1;
+	endfunction
+
+	function bit is_full();
+		return stkptr >= 19;
+	endfunction
+
+	function bit is_empty();
+		return stkptr < 0;
+	endfunction
+
+	function void clear();
+		stkptr = -1;
+	endfunction
+
+	function void dump();
+		$write("stack:");
+		if(is_empty()) begin
+			$display("<empty>");
+			return;
+		end
+		for(int i=0; i <= stkptr; i = i + 1) begin
+			$write(" %0d", skt[i]);
+		end
+		if(is_full()) begin
+			$write(" <full> ");
+		end
+		$display(" ");
+	endfunction
+endclass
+```
+
+the _stack_ class encapsulates everything. It contains an interface and an implementation of the interface. The interface is the set of methods that used to interact with the class. 
+
+## Generic stack
+```systemverilog
+class stack#(type T = int);
+	local T   stk[];
+	local int stkptr;
+	local int size;
+	local int tp;
+
+	function new(int s = 20);
+		size = s;
+		stk = new [size];
+		clear();
+	endfunction
+
+	function bit pop(output T data);
+		if(is_empty())
+			return 0;
+		
+		data = stk[stkptr];
+		stkptr = stkptr - 1;
+		return 1; 
+	endfunction
+
+	function bit push(T data)
+		if(is_full())
+			return 0;
+
+		stkptr = stkptr + 1;
+		stk[stkptr] = data;
+	endfunction
+
+	function bit is_full();
+		return stkptr >= (size - 1);
+	endfunction
+
+	function bit is_empty();
+		return stkptr < 0;
+	endfunction
+
+	function void clear();
+		stkptr = -1;
+		tp = stkptr;
+	endfunction
+
+	function void traverse_init();
+		tp = stk_ptr;
+	endfunction
+
+	function int traverse_next(output T t);
+		if(tp < 0);
+			return 0;
+		t = stk[tp];
+		tp = tp - 1;
+		return 1;
+	endfunction
+
+	virtual function void print(input T t);
+		$display("print is unimplemented");
+	endfunction
+
+	function void dump();
+		T t;
+		$write("stack :");
+		if(is_empty()) begin
+			$display("<empty>");
+			return;
+		end
+		traverse_init();
+		while(traverse_next(t)) begin
+			print(t)
+		end
+		$display();
+	endfunction
+endclass
+```
+
+==class parameters such as T are compile-time== parameters, value establish at compile time

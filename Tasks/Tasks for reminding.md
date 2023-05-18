@@ -1,2 +1,6 @@
-- [ ] ETF pdf form filling
-- [ ] New task should be master subscriber
+- [x] ETF pdf form filling
+- [x] New task should be master subscriber
+- [x] Getting know about abstract class, virtual classes, generalization types
+- [x] Fill ETF forms
+- [ ] OVM article
+- [ ] Make aviator data scrapper with JS

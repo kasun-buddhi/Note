@@ -142,3 +142,89 @@ Following block diagram shows a synchronous system
 
 ### Code development
 The key is to separate the memory component(the register) from the system. Once register is isolated, the remaining portion is a pure combinational circuit 
+Based on the characteristics of the next-stage logic, we divide sequential circuit into three categories.
+
+- **Regular sequential circuit**: The state transitions in the circuit exhibit a "regular" pattern. next-stage logic is constructed by a predesigned component like incrementor or shifter
+- **FSM** : circuit do not exhibit a simple, repetitive pattern. The next-stage logic is constructed by "random logic". also called random sequential circuit.
+- **FSMD** : The circuit consists of a regular sequential circuit and an FSM. The two parts are known as a data path and a control path. 
+
+### Sequential circuit coding guidelines and style
+- Separate memory components(registers) into an individual code segment.
+- Use _always_ff_ and nonblocking(deferred) assignment for a registers.
+- Use _always_comb_ and blocking(immediate) assignment for a combinational circuit.
+- Assign a variable only in a single always block.
+
+## HDL code of the ff and register
+
+### D FF
+4 types of D FFs,
+- D FF without asynchronous reset
+- D FF with asynchronous reset
+- D FF with synchronous clear
+- D FF with synchronous enable
+
+**D FF without asynchronous reset**
+```systemverilog
+module d_ff(
+	input  logic clk,
+	input  logic d,
+	output logic q
+);
+	always_ff @(posedge clk) begin
+		q <= d;
+	end
+endmodule
+```
+
+**D FF with asynchronous reset**
+```systemverilog
+module d_ff_reset(
+	input  logic clk,
+	input  logic reset,
+	input  logic d,
+	output logic q
+);
+	always_ff @(posedge clk, posedge reset) begin
+		if(reset) begin
+			q <= 1'b0;
+		end
+		else begin
+			q <= d;
+		end
+	end
+endmodule
+```
+
+**D FF with synchronous enable**
+```systemverilog
+module d_ff_en_2seg(
+	input  logic clk,
+	input  logic reset,
+	input  logic en,
+	input  logic d,
+	output logic q
+);
+	logic r_reg;
+	logic r_next;
+
+	always_ff @(posedge clk, posedge reset) begin
+		if(reset) begin
+			r_reg <= 1'b0;
+		end
+		else begin
+			r_reg <= r_next;
+		end
+	end
+	
+	always_comb begin
+		if (en) begin
+			r_next = d;
+		end
+		else begin
+			r_next = r_reg;
+		end
+	end
+
+	assign q = r_reg;
+endmodule
+```
