@@ -195,3 +195,86 @@ endclass
 ```
 
 ==class parameters such as T are compile-time== parameters, value establish at compile time
+
+## Inheritance 
+note : [[Introduction to SystemVerilog {by Ashok B. Mehta }#Extended Class and Inheritance]]
+```systemverilog
+module top_class;
+	class base;
+		logic [31:0] data1;
+		logic [31:0] data2;
+		logic [31:0] busx;
+		
+		function void bus();
+			busx = data1 | data2;
+		endfunction
+		
+		function void disp();
+			$display("[base#disp()] %h", busx);
+		endfunction
+	endclass
+	
+	class ext extends base;
+		logic [31:0] data3; // add a new propert
+	
+		function new();
+			$display("Call base class method from extended class");
+			super.disp();
+		endfunction
+		
+		function void bus();
+			busx = data1 & data2 & data3;
+		endfunction
+		
+		function void disp();
+			$display("[ext#disp()] %h", busx);
+		endfunction
+	endclass
+	
+	initial begin
+		base b1;
+		ext ex1;
+		
+		b1 = new();
+		ex1 = new();
+		
+		b1.data1 = 32'h ffff_0000;
+		b1.data2 = 32'h 0000_ffff;
+		b1.bus();
+		b1.disp();
+		
+		ex1.data1 = 32'h 0101_1111;
+		ex1.data2 = 32'h 1111_ffff;
+		ex1.data3 = 32'h 1010_1010;
+		ex1.bus();
+		ex1.disp();
+	end
+endmodule
+```
+
+## Free-running shift registers [[FPGA prototyping#Free-running shift registers]]
+```systemverilog
+module free_run_shift_reg
+	#(parameter N=8)(
+		input logic clk,
+		input logic reset,
+		input logic s_in,
+		output logic s_out
+	);
+	logic [N-1:0] r_reg;
+	logic [N-1:0] r_next;
+
+	always @(posedge clk, posedge reset) begin
+		if(reset) begin
+			r_reg <= 0;
+		end
+		else begin
+			r_reg <= r_next;
+		end
+	end
+
+	assign r_next = {s_in,r_reg[N-1:1]};
+
+	assign s_out = r_reg[0];
+endmodule
+```

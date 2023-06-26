@@ -1,17 +1,16 @@
 ## Daily
-- [ ] [[UVM Cookbook]] / [[OVM Cookbook]]
+- [ ] [[UVM Cookbook]] / [[OVM Cookbook]] / [[Introduction to SystemVerilog {by Ashok B. Mehta }]]
 - [ ] [[FPGA prototyping]]
-- [ ] [[AXI4-Stream]]
 - [ ] Media checking
 	- [ ] facebook
-	- [ ] zoho
+	- [x] zoho
 	- [ ] medium
-	- [ ] twitter
+	- [x] twitter
+	- [ ] LinkedIn
 
 ## Within a 3-days
 medium article - 
 - [ ] OVM basics ⏳ 2023-05-18
-
 
 ## Weekly
 - [ ] working on ⏳ 2023-05-22

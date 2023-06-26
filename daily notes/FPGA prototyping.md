@@ -228,3 +228,15 @@ module d_ff_en_2seg(
 	assign q = r_reg;
 endmodule
 ```
+[[2023.06.01]]
+### Register
+
+A register is a collection of D FFs that are controlled by the same clock and reset signals. Life a D FF, a register can have an optional asynchronous reset signal and a synchronous enable signal. The code is identical to that of a D FF except that the one-dimensional array data type is needed for the relevant input and output signals. 
+
+## example
+
+### Free-running shift registers
+A free-running shift registers shifts its content to the left or right one position in each clock cycle. There is no other control signal. 
+code : [[Exmple Designs#Free-running shift registers]]
+
+### Universal shift registers
